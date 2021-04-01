@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello Wizdom!</h2>
+<h1>Hello Wizdom!</h1>
 </body>
 </html>
