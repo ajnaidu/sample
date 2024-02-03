@@ -8,7 +8,7 @@
   <artifactId>sample</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
-
+  
   <name>sample Maven Webapp</name>
   <url>http://www.example.com</url>
 
