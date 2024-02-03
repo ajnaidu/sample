@@ -1,5 +1,6 @@
 <html>
 <body>
-<h2>Hello World from Jenkins!</h2>
+<h1>Hello World</h1>
+<h2>Hello Jenkins from GitHub!!</h2>
 </body>
 </html>
