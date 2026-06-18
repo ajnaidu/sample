@@ -2,11 +2,14 @@ name: Sample Workflow
 on: workflow_dispatch
 jobs:
   clone:
+    runs-on: ubuntu-latest
     steps:
     - run: git clone git@https://github.com/ajnaidu/sample.git
   build:
+    runs-on: ubuntu-latest
     steps:
     - run: mvn clean install
   deploy:
+    runs-on: ubuntu-latest
     steps:
     - run: echo "deployed application"
