@@ -7,6 +7,8 @@ jobs:
     - run: git clone https://github.com/ajnaidu/sample.git
     - run: pwd
     - run: ls -la
+    - run: cd sample    
+    - run: ls -la
     - run: mvn clean install
   deploy:
     runs-on: ubuntu-latest
