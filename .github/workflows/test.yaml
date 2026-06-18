@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: git clone https://github.com/ajnaidu/sample.git
-  build:
+  build: [clone]
     runs-on: ubuntu-latest
     steps:
     - run: mvn clean install
