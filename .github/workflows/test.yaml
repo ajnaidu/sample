@@ -1,0 +1,12 @@
+name: Sample Workflow
+on: workflow_dispatch
+jobs:
+  clone:
+    steps:
+    - run: git clone git@https://github.com/ajnaidu/sample.git
+  build:
+    steps:
+    - run: mvn clean install
+  deploy:
+    steps:
+    - run: echo "deployed application"
