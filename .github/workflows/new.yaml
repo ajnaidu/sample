@@ -7,7 +7,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: clone the repository
-        uses: actions/checkout@7
+        uses: actions/checkout@v7
       - name: building the project 
         run: mvn clean install
       - name: deply project 
