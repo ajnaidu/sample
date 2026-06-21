@@ -1,0 +1,16 @@
+
+
+name: cloning from the same repo 
+on: 
+  workflow_dispatch:
+  push:
+jobs:
+  job1:
+      runs-on: ubuntu-latest
+      steps:
+      - name: clone the repository
+        uses: actions/checkout@v7
+      - name: build the project 
+        run: mvn install clean
+      - name : deploy the project
+        run: echo "deployed successfully"
