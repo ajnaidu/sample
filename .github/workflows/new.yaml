@@ -1,0 +1,14 @@
+name: new action file 
+on:
+  workflow_dispatch:
+  push:
+jobs:
+   job1:
+      runs-on: ubuntu-latest
+      steps:
+      - name: clone the repository
+        uses: actions/checkout@7
+      - name: building the project 
+        run: mvn clean install
+      - name: deply project 
+        run: echo "deployed successfully" 
