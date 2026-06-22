@@ -1,0 +1,10 @@
+name: Contexts Demo
+on: push
+env:
+  NAME: Ajay Naidu
+jobs:
+  job1:    
+    runs-on: ubuntu-latest
+    steps:
+    - run: ${{ env }}
+      
