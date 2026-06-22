@@ -5,4 +5,4 @@ jobs:
     environment: PROD
     runs-on: ubuntu-latest
     steps:
-    - run: echo "{{ vars.JFROG_URL }}"
+    - run: echo "${{ vars.JFROG_URL }}"
