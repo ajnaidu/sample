@@ -11,7 +11,7 @@ jobs:
       steps:
       - name: clone the repos
         run:
-          echo ${{env.JFROG_URL}}
+          echo "${{env.JFROG_URL}}"
       - run:
-          echo ${{env.JFROG_TOKEN}}
+          echo "${{env.JFROG_TOKEN}}"
            
