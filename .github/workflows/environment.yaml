@@ -6,3 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "${{ vars.MY_VAR }}"
+    - run: echo "${{ secrets.MY_SECRET }}"
