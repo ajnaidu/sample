@@ -1,4 +1,4 @@
-name: new action file 
+name: New Action File 
 on:
   workflow_dispatch:
   push:
