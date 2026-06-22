@@ -1,0 +1,8 @@
+name: Enviroment Demo
+on: push
+jobs:
+  job1:
+    environment: PROD
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "{{ env.JFROG_URL }}"
