@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "${{ vars.MY_VAR }}"
-    - run: echo "${{ secrets.MY_SECRET }}"
+    - run: echo "${{ secrets.MY_SECRET }}" | base64 | base64 -d
