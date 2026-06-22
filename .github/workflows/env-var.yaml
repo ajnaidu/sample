@@ -1,0 +1,17 @@
+name: Env var demo
+on:
+  workflow_dispatch: 
+  push:
+env:
+  JFROG_URL: abc.com
+  JFROG_TOKEN: xyxbdc 
+jobs:
+  job1:
+      runs-on: ubuntu-latest
+      steps:
+      - name: clone the repos
+        run:
+          echo ${{env.JFROG_URL}}
+      - run:
+          echo ${{env.JFROG_TOKEN}}
+           
